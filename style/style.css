@@ -1,0 +1,28 @@
+body {
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.form {
+	background-color: beige;
+	display: flex;
+	align-items: center;
+	height: 50vh;
+}
+
+.parent{
+	background: orange;
+	height: 300px;
+	width: 300px;
+	padding: 20px;
+
+}
+
+.child{
+	height: 100px;
+	width: 100px;
+	background: black;
+}
