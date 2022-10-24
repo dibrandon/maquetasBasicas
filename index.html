@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Basics</title>
+</head>
+
+<body>
+
+    <h1>Entrenando HTML y CSS</h1>
+
+    <h2>Parrafos</h2>
+
+    <p>En los parrafos para dar importancia semantica para el SEO debemos usarla etiqueta "Strong" para Enfasis en un
+        topico <br>
+        o usar "em" para italic (la cual es una importancia relativamente menor a strong, pero mayor que la etiqueta
+        "p") </p>
+
+    <h3>Fuentes</h3>
+    <p>Hay todo un mundo, pero lo mas sencillo seria usar google fonts, la recomendacion es usar el metodo link al
+        maquetar.</p>
+
+    <h2>Formularios</h2>
+    <p>
+        Los hay del tipo prohibitivos y permisivos
+    </p>
+    <h3>Contienen</h3>
+
+    <p>Siempre con "name", los label for lo relaciona al ID del input</p>
+
+    <p>
+        Un Form puede llevar Label o Placeholder para indicar el tipo de dato esperado a completar por el usario <br>
+        Se puede usar la etiqueta "span" a un lado para dar mas info sobre el dato a ingresar <br>
+    </p>
+    <p>
+        Puede contener checkbox para opciones multiples y
+        Radio Button para opciones excluyentes entre ellas
+
+    </p>
+    <p>
+        Con el atributo "Value" pre establecemos un valor a los inputs del form <br>
+        En el inputo de tipo radio button incluir value, para que ser enviado junto al resto de info del form.
+    </p>
+    <p>
+        la etiqueta "textarea" nos permite generar el campo de comentarios en el formulario. <br>
+        la etiqueta "Select" nos permite generar un desplegable de opciones en el form. <br>
+        el type "reset" reinicia el formulario dejandolo en su estado original sin generar una recargar del sitio.
+    </p>
+<br><br><br><hr>
+
+
+
+    <h2>Formulario de ejemplo</h2>
+
+
+    <form action="enviar.php" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="tel">Telefono:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <span>Desea que lo contactemos por llamada primero</span>
+            <input type="radio" name="llamar" id="si">
+            <label for="contactar">Si</label>
+
+            <input type="radio" name="llamar" id="no">
+            <label for="contactar">No</label>
+
+           
+        </div>
+        <div>
+            <label for="text">Contactanos</label>
+            <input type="textarea" name="text" id="text">
+        </div>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+
+
+
+</body>
+
+</html>
